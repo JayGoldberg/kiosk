@@ -106,13 +106,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s6">
             <input id="useragent" type="text">
             <label for="url">Override User Agent</label>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s6">
             <input id="authorization" type="text">
             <label for="url">Override Authorization Header</label>
           </div>
@@ -138,20 +136,18 @@
             <label for="remote">Remote Administration</label>
           </div>
         </div>
-        <div class="row settings-detail">
-          <div class="input-field col s12">
+          <div class="input-field col s2">
             <input id="username" type="text" value="admin">
             <label for="username" class="active">Username</label>
           </div>
-          <div class="input-field col s6">
+          <div class="input-field col s2">
             <input id="password" type="password">
             <label for="password">Password</label>
           </div>
-          <div class="input-field col s6">
+          <div class="input-field col s2">
             <input id="confirm_password" type="password">
             <label for="confirm_password">Confirm Password</label>
           </div>
-        </div>
         <div class="row disabled remote">
           <div class="col s11">
             <label for="host">Host</label>
@@ -222,16 +218,13 @@
           </div>
         </div>
         <div class="row remote-schedule-detail disabled">
-          <div class="input-field col s12">
+          <div class="input-field col s8">
             <input id="remote-schedule-url" type="text">
             <label for="remote-schedule-url" class="active">Schedule URL (must start with http:// or https://)</label>
           </div>
-          <div class="col input-field s2">
+          <div class="col input-field s4">
             <input id="schedule-poll-interval" type="number" step="0.1" value="15">
-            <label for="schedule-poll-interval" class="active">Schedule Poll Interval</label>
-         </div>
-         <div class="col input-field s2">
-           <label>minutes</label>
+            <label for="schedule-poll-interval" class="active">Schedule Poll Interval (mins)</label>
          </div>
         </div>
 
@@ -249,7 +242,7 @@
         <div class="row">
           <div class="col s12">
             <p>
-              <a href="#" class="btn-large waves-effect" id="save">Save</a>
+              <a href="#" class="btn-large waves-effect" id="save">Save & Reload</a>
               <span style="margin:1em 0 0 3em;">
                 <input id="reset-cache" type="checkbox">
                 <label for="reset-cache">Clear Cache on Save</label>
